@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8">
+    <title>Feedback Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Feedback Survey Form</h1>
+    <p id="description">Tell us about your experience on freeCodeCamp.</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label">
+          Full Name <input id="name" type="text" placeholder="Will Smith" required/>
+        </label>
+        <label id="email-label">
+          Email <input id="email" type="email" placeholder="example@gmail.com" required/>
+        </label>
+        <label id="number-label">
+          Age <input id="number" type="number" min="13" max="100" placeholder="50"/>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>What was your experience level before starting a course on freeCodeCamp?
+          <select id="dropdown">
+            <option value="">Select</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+      <fieldset>
+        <label>Would you say you gained more experience after taking a freeCodeCamp course?
+        </label>
+        <label><input class="inline" type="radio" name="learning-experience" value="yes" checked/>Yes
+        </label>
+        
+        <label> <input class="inline" type="radio" name="learning-experience" value="no"/>No
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Which certification courses did you find most interesting?</label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="1"/>Responsive Web design Certification        
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="2"/>JavaScript Algorithms and Data Structures Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="3"/>Front End Development Libraries Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="4"/>Data Visualization Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="5"/>Relation Database Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="6"/>BackEnd Development and APIs Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="7"/>Quality Assurance Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="8"/>Scientific Computing with Python Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="9"/>Data Analysis with Python Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="10"/>Information Security Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="11"/>Machine Learning with Python Certification
+        </label>
+        <label>
+          <input class="inline" type="checkbox" name="certificates" value="12"/>College Algebra with Python Certification
+        </label>
+      </fieldset>
+        <label>Comments
+          <textarea rows="6" cols="4"></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
